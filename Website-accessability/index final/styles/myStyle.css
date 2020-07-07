@@ -1,0 +1,862 @@
+﻿body {
+    direction: rtl;
+    background-color: #000000;
+    font-family: 'Assistant', sans-serif;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+
+
+}
+
+.wheelchair {
+    width: 30px;
+}
+
+.disabled {
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.accessibility {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    color: #fcfaf4;
+    display: none;
+}
+
+#skip {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    list-style: outside none;
+}
+
+#skip li {
+    list-style-type: none;
+}
+
+#skip a {
+    position: absolute;
+    left: -9999px;
+    top: 30px;
+}
+
+#skip a:focus, #skip a:active {
+    position: relative;
+    left: 0px;
+    z-index: 9999;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 45px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font: 25px "assistant";
+    color: white;
+    border: solid 1px;
+    background-color: black
+}
+
+#ulone {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    padding-left: 20px;
+}
+
+.header-menu {
+    position: fixed;
+    display: flex;
+    width: 1280px;
+    z-index: 999;
+
+}
+
+#navone {
+    background-color: #000000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navone ul li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navone ul li a {
+    display: block;
+    color: #c5e0b4;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navone ul li a.active {
+    color: #c5e0b4;
+}
+
+#navone ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background: #c5e0b4;
+    display: none;
+}
+
+
+#navone ul li a:hover {
+    color: #ff833e;
+}
+
+#navone ul li ul {
+    display: none;
+    position: absolute;
+}
+
+#navone ul li:hover > ul {
+    background-color: #293d31;
+}
+
+#navone .tavlinim-menu-container:hover .tavlinim-menu {
+    display: grid;
+}
+
+#navone ul li:hover .categories-menu {
+    display: grid;
+}
+
+.homepage {
+    position: relative;
+}
+
+.homepage:after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #c5e0b4;
+    width: 33px;
+    height: 1px;
+    padding-top: 30px;
+    right: 24%;
+}
+
+.tavlinim-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 210px;
+    width: 200px;
+    padding: 8px;
+    right: -15px;
+    top: 80px;
+}
+
+.categories-menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100px;
+    width: 127px;
+    padding: 8px;
+    right: -15px;
+    top: 80px;
+}
+
+#navone .tavlinim-menu li a {
+    padding: 8px;
+}
+
+
+#navone ul li:hover .categories-menu {
+    display: grid;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 250px;
+    background-color: #000000;
+    font-size: 55px;
+    font-family: 'Freestyle Script';
+    color: #c5e0b4;
+}
+
+div h1 {
+    color: #c5e0b4;
+    font-size: 40pt;
+    padding-right: 10px;
+    padding-top: 105px;
+    background-color: #000000;
+}
+
+.vidtext {
+    color: #c5e0b4;
+    font-size: 24pt;
+    padding-right: 10px;
+    background-color: #000000;
+
+}
+
+.vidtext2 {
+    color: #c5e0b4;
+    font-size: 24pt;
+    margin-top: 305px;
+    background-color: #000000;
+    text-align: center;
+}
+
+.arrow {
+    padding-top: 15px;
+    animation: pulse 0.75s infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    position: absolute;
+    right: 586px;
+    background-color: #000000;
+}
+
+@keyframes pulse {
+    0% {
+        width: 80px;
+        height: 40px;
+    }
+    100% {
+        width: 90px;
+        height: 50px;
+    }
+}
+
+
+.text-container {
+    position: relative;
+    height: 820px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.homepage-video {
+    width: 1280px;
+    position: absolute;
+    object-fit: cover;
+    z-index: -100;
+    top: 0;
+    left: 0;
+}
+
+#chooseherb {
+    height: 80px;
+    width: 1280px;
+}
+
+
+.herbimages {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-right: 62px;
+    margin-left: 130px;
+    padding-right: 45px;
+    padding-left: 45px;
+
+
+}
+
+.imagesize {
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 5px 10px rgb(120, 120, 120);
+
+
+}
+
+.herb-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    position: relative;
+
+}
+
+.herb-text .text {
+    font-size: 18pt;
+    color: #c5e0b4;
+}
+
+.under-line {
+    display: none;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #293d31;
+    position: absolute;
+    right: 45%;
+}
+
+.herb-text:hover .under-line {
+    display: block;
+}
+
+.herb-text:focus .under-line {
+    display: block;
+}
+
+.herb-text:focus-within .under-line {
+    display: block;
+}
+
+.herb-text:hover .herb-info {
+    display: block;
+}
+
+
+.herb-text:focus .herb-info {
+    display: block;
+}
+
+.herb-name {
+    color: #293d31;
+    font-size: 18pt;
+    margin-top: 10px;
+}
+
+.herb-info {
+    display: none;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    top: 0;
+
+}
+
+.herb-text:hover .herb-info {
+    display: block;
+}
+
+.ideal {
+    position: relative;
+    color: white;
+    font-size: 16pt;
+    position: relative;
+    top: 60px;
+    right: 11px;
+
+}
+
+
+#rosemary-text {
+    color: white;
+    margin-top: 20px;
+    margin-right: 12px;
+    cursor: not-allowed;
+    font-size: 14pt;
+}
+
+#mint-text {
+    color: white;
+    margin-top: 20px;
+    margin-right: 22px;
+    cursor: not-allowed;
+    font-size: 14pt;
+}
+
+#sage-text {
+    color: white;
+    margin-top: 20px;
+    margin-right: 22px;
+    font-size: 14pt;
+}
+
+#basil-text {
+    color: white;
+    margin-top: 20px;
+    margin-right: 21px;
+    cursor: not-allowed;
+    font-size: 14pt;
+
+}
+
+.icon-rosemary {
+    position: relative;
+    right: 10px;
+    bottom: 2px;
+    cursor: not-allowed;
+}
+
+.rosemary-waterinfo {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+}
+
+
+.water-can-rosemary {
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    top: 90px;
+    right: 8px;
+}
+
+.rosemary-suninfo {
+    position: absolute;
+    top: 149px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+
+}
+
+
+.sun-rosemary {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 143px;
+    right: 15px;
+
+}
+
+.icon-mint {
+    position: absolute;
+    top: 52px;
+    cursor: not-allowed;
+}
+
+.mint-waterinfo {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+}
+
+.water-can-mint {
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    top: 90px;
+    right: 8px;
+
+}
+
+.mint-suninfo {
+    position: absolute;
+    top: 149px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+    width: 130px;
+
+}
+
+.sun-mint {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 143px;
+    right: 15px;
+
+}
+
+.icon-sage {
+    position: relative;
+    bottom: 3px;
+}
+
+.sage-waterinfo {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+}
+
+.water-can-sage {
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    top: 90px;
+    right: 8px;
+
+}
+
+.sage-suninfo {
+    position: absolute;
+    top: 149px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+    width: 130px;
+
+}
+
+.sun-sage {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 143px;
+    right: 15px;
+
+}
+
+.icon-sage a {
+    color: white;
+}
+
+.icon-basil {
+    position: relative;
+    bottom: -13px;
+    cursor: not-allowed;
+
+}
+
+.basil-waterinfo {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+
+}
+
+.water-can-basil {
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    top: 90px;
+    right: 8px;
+
+}
+
+.basil-suninfo {
+    position: absolute;
+    top: 149px;
+    right: 50px;
+    color: white;
+    font-size: 14pt;
+    width: 130px;
+
+}
+
+.sun-basil {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 143px;
+    right: 15px;
+}
+
+
+.herb-text p {
+    font-size: 18pt;
+    color: #293d31;
+}
+
+
+.button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 29px;
+    padding-left: 20px;
+
+}
+
+.herb-button {
+    width: 140px;
+    height: 48px;
+    background-color: #ff833e;
+    color: #000000;
+    font-size: 18pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgb(120, 120, 120);
+
+}
+
+.herb-button:hover {
+    background-color: #293d31;
+    color: white;
+}
+
+
+#title-line {
+    width: 850px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 40px;
+}
+
+.lines {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 28pt;
+    color: #c5e0b4;
+}
+
+.lines:before {
+    content: '';
+    background: #c5e0b4;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.lines:after {
+    content: attr(data-content);
+    position: relative;
+    padding: 0 8px;
+    line-height: 1.5em;
+    background: #000000;
+}
+
+.categories-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.categories-section h2 {
+    color: #c5e0b4;
+    font-size: 35pt;
+    width: 1280px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.light {
+    background-image: url(../images/light.png);
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 500px;
+    margin-right: 149px;
+    margin-top: 20px;
+
+
+}
+
+.categories-section a {
+    color: #c5e0b4;
+    font-size: 40pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+
+}
+
+.categories-section a:hover {
+    color: #ff833e;
+}
+
+.content-light {
+    height: 330px;
+    width: 500px;
+    background-color: #000000;
+    margin-top: 20px;
+
+}
+
+.water {
+    background-image: url(../images/water.png);
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 500px;
+
+}
+
+.content-water {
+    height: 330px;
+    width: 500px;
+    background-color: #000000;
+    margin-right: 149px;
+
+}
+
+.tea {
+    background-image: url(../images/tea3.png);
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 500px;
+    margin-right: 149px;
+
+}
+
+.content-tea {
+    height: 330px;
+    width: 500px;
+    background-color: #000000;
+
+}
+
+.categories-section h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20pt;
+    color: #c5e0b4;
+}
+
+.categories-section p {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 45px;
+    margin-left: 25px;
+    font-size: 15pt;
+    color: #c5e0b4;
+
+}
+
+.categories-button {
+    width: 114px;
+    height: 41px;
+    background-color: #ff833e;
+    color: #000000;
+    font-size: 13pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 355px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgb(120, 120, 120);
+}
+
+.categories-button a {
+    font-size: 16pt;
+    color: #000000;
+}
+
+.categories-button a:hover {
+    color: white;
+}
+
+.categories-button:hover {
+    background-color: #293d31;
+    color: white;
+}
+
+footer {
+    width: 1280px;
+    height: 317px;
+    margin-top: 67px;
+    background-color: #000000;
+}
+
+#logo-footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 22px;
+
+}
+
+#logo-footer p {
+    font-size: 40pt;
+    font-family: 'Freestyle Script';
+    color: #c5e0b4;
+}
+
+.navtwo {
+    display: flex;
+}
+
+.footer-nav1 {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.footer-nav2 {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-right: 126px;
+}
+
+.footer-nav1, a {
+    color: #ff833e;
+    text-decoration: none;
+}
+
+.footer-nav2 a {
+    color: #ff833e;
+    text-decoration: none;
+}
+
+.footer-around {
+    display: flex;
+}
+
+.herbs-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 210px;
+    width: 200px;
+    padding: 8px;
+    list-style: none;
+    margin-right: 433px;
+}
+
+.herbs-footer a {
+    color: #c5e0b4;
+}
+
+.categories-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    margin-top: 8px;
+    margin-right: 89px;
+    height: 105px;
+
+}
+
+.categories-footer a {
+    color: #c5e0b4;
+}
+
+
