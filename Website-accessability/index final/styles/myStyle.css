@@ -140,7 +140,7 @@
 }
 
 #navone ul li:hover > ul {
-    background-color: #293d31;
+    background-color: #000;
 }
 
 #navone .tavlinim-menu-container:hover .tavlinim-menu {

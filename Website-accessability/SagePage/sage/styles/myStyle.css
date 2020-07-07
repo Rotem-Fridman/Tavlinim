@@ -1,6 +1,7 @@
 ﻿body {
     direction: rtl; 
     background-color:#000000;
+    font-family: 'Assistant', sans-serif;
 }
 
 #container {
@@ -34,7 +35,10 @@
     display: flex;
     width: 1280px;
     z-index: 999;
+}
 
+.bread-bold {
+    font-weight: 600;
 }
 .accessibility {
     position: absolute;
@@ -149,7 +153,7 @@
 }
 
 #navone ul li:hover> ul  {
-    background-color:#293d31; 
+    background-color:#000;
 }
 
 #navone .tavlinim-menu-container:hover .tavlinim-menu {
@@ -341,7 +345,7 @@ h3 {
 }
 
 .cutting-text {
-    color: white;
+    color: #c5e0b4;
     padding-top: 30px;
     padding-right: 10px;
     font-size: 14pt;
