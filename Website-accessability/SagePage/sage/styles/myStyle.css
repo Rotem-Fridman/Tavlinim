@@ -136,10 +136,10 @@
      position: absolute;
     content: '';
     border-bottom: 1px solid #c5e0b4;
-    width: 33px;
-    height: 1px;
-    padding-top: 30px;
-    right: 24%;
+        width: 33px;
+        height: 1px;
+        right: 24%;
+        bottom: 25px;
     }
 
 
