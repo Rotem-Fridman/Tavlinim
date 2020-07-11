@@ -45,21 +45,20 @@
 #skip a {
     position: absolute;
     left: 941px;
-    top: -20px;
+    top: 0;
+    opacity: 0;
 }
 
 #skip a:focus, #skip a:active {
     position: relative;
-    left: 0px;
+    opacity: 1;
+    left: 55px;
+    top: 23px;
     z-index: 9999;
-    width: 200px;
-    height: auto;
-    margin: 0 auto;
-    padding: 30px 45px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     letter-spacing: 4px;
-    font: 25px "assistant";
     color: white;
     border: solid 1px;
     background-color: black
@@ -271,8 +270,8 @@
 
 .homepage-video video {
     display: block;
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .all-herb-section {
