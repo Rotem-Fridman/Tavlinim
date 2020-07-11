@@ -185,8 +185,9 @@ nav ol li:last-child:after {
     padding-top: 40px;
 }
 
-iframe {
-    margin-right: 239px;
+.video-container {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -270,6 +271,11 @@ iframe {
     left: 352px;
     bottom: -6px;
 
+}
+
+.lines:before {
+    left: 190px;
+    width: 70%;
 }
 
 .black-season {
