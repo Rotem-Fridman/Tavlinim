@@ -16,15 +16,15 @@
           integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
     <link href="../reset.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../myStyle.css">
-    <link href="contact-us-styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../accessibility/myStyle-acc.css">
+    <link href="../accessibility/contact-us-acc-styles.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="accessibility-contrast">
 <div>
     <div id="container">
         <header class="header-menu">
             <div>
-                <a href="../index.html" id="logo">Tavlinim</a>
+                <a href="index-accessibility.html" id="logo">Tavlinim</a>
             </div>
             <ul id="skip">
                 <li>
@@ -33,13 +33,13 @@
             </ul>
             <nav aria-label="ניווט מרכזי" id="navone">
                 <ul id="ulone">
-                    <li><a href="../index.html">דף הבית</a></li>
+                    <li><a href="../accessibility/index-accessibility.html">דף הבית</a></li>
                     <li><a class="link-disabled" href="">איך מתחילים? </a></li>
                     <li class="tavlinim-menu-container">
-                        <a href="../tavlinimpage/tavlinimpage.html">התבלינים</a>
+                        <a href="../accessibility/tavlinimpage-accessibility.html">התבלינים</a>
                         <ul class="tavlinim-menu">
 
-                            <li><a href="../sage/sage.html">מרווה</a></li>
+                            <li><a href="sage-accessibility.html">מרווה</a></li>
                             <li><a class="link-disabled" href="">בזיליקום</a></li>
                             <li><a class="link-disabled" href="">תימין</a></li>
                             <li><a class="link-disabled" href="">נענע</a></li>
@@ -63,16 +63,16 @@
                             <li><a class="link-disabled" href="">לתה מנצח</a></li>
                         </ul>
                     </li>
-                    <li><a href="../about/about.html">אודות</a></li>
-                    <li id="contact"><a class="active" href="../contact-us/contactus.html">צור קשר</a></li>
-                    <li><a href="../accessibility/contactus-accessibility.html"><img
+                    <li><a href="../accessibility/about-accessibility.html">אודות</a></li>
+                    <li id="contact"><a class="active" href="contactus-accessibility.html">צור קשר</a></li>
+                    <li><a href="../contact-us/contactus.html"><img
                             class="wheelchair" src="../images/whitewheelchair.png" alt="מעבר לאתר נגיש"/></a></li>
                 </ul>
             </nav>
         </header>
 
         <main role="main" id="easy">
-            <div>
+            <div class="img-bg">
                 <a name="easy" class="accessibility">תוכן</a>
                 <div class="contact-img">
                     <div class="background-opacity">
@@ -80,19 +80,19 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="acc-container">
                 <nav id="bread-menu">
                     <ol>
-                        <li><a href="../index.html">דף הבית</a></li>
+                        <li><a href="../accessibility/index-accessibility.html">דף הבית</a></li>
                         <li>צור קשר</li>
                     </ol>
                 </nav>
             </div>
 
-            <div class="title-line">
+            <div class="title-line acc-container">
                 <div class="lines" data-content="דברו איתנו"></div>
             </div>
-            <form>
+            <form class="acc-container">
                 <input type="hidden" id="myemail" name="email" value="yuval2509@gmail.com"/>
                 <div id="top">
                     <div class="rightside">
@@ -159,8 +159,6 @@
 
 
             </form>
-
-
         </main>
 
 
@@ -172,22 +170,22 @@
             <div>
                 <nav class="navtwo">
                     <ul class="footer-nav1">
-                        <li><a href="../index.html">דף הבית</a></li>
+                        <li><a href="../accessibility/index-accessibility.html">דף הבית</a></li>
                         <li><a href="" class="link-disabled">איך מתחילים? </a></li>
-                        <li><a href="../tavlinimpage/tavlinimpage.html">התבלינים</a></li>
+                        <li><a href="../accessibility/tavlinimpage-accessibility.html">התבלינים</a></li>
                     </ul>
 
                     <ul class="footer-nav2">
                         <li><a class="link-disabled" href=""> הקטגוריות</a></li>
-                        <li><a href="../about/about.html">אודות</a></li>
-                        <li><a href="contactus.html">צור קשר</a></li>
+                        <li><a href="../accessibility/about-accessibility.html">אודות</a></li>
+                        <li><a href="contactus-accessibility.html">צור קשר</a></li>
                     </ul>
                 </nav>
 
                 <div class="footer-around">
 
                     <ul class="herbs-footer">
-                        <li><a href="../sage/sage.html">מרווה</a></li>
+                        <li><a href="sage-accessibility.html">מרווה</a></li>
                         <li><a href="" class="link-disabled">בזיליקום</a></li>
                         <li><a href="" class="link-disabled">תימין</a></li>
                         <li><a href="" class="link-disabled">נענע</a></li>

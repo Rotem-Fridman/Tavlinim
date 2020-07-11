@@ -15,14 +15,15 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
           integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
-    <link href="reset.css" rel="stylesheet"/>
-    <link href="myStyle.css" rel="stylesheet"/>
+    <link href="../reset.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../myStyle.css">
+    <link href="myStyle-acc.css" rel="stylesheet"/>
 
 </head>
-<body>
+<body class="accessibility-contrast">
 <div id="container">
     <header class="header-menu">
-        <div><a id="logo" href="index.html">.Tavlinim</a></div>
+        <div><a id="logo" href="index-accessibility.html">.Tavlinim</a></div>
         <ul id="skip">
             <li>
                 <a href="#easy">דלג לתוכן</a>
@@ -30,13 +31,13 @@
         </ul>
         <nav aria-label="ניווט מרכזי" id="navone">
             <ul id="ulone">
-                <li class="homepage"><a class="active" href="index.html">דף הבית</a></li>
+                <li class="homepage"><a class="active" href="index-accessibility.html">דף הבית</a></li>
                 <li><a class="link-disabled" href="">איך מתחילים? </a></li>
                 <li class="tavlinim-menu-container">
-                    <a href="tavlinimpage/tavlinimpage.html">התבלינים</a>
+                    <a href="tavlinimpage-accessibility.html">התבלינים</a>
                     <ul class="tavlinim-menu">
 
-                        <li><a href="sage/sage.html">מרווה</a></li>
+                        <li><a href="sage-accessibility.html">מרווה</a></li>
                         <li><a class="link-disabled" href="">בזיליקום</a></li>
                         <li><a class="link-disabled" href="">תימין</a></li>
                         <li><a class="link-disabled" href="">נענע</a></li>
@@ -59,11 +60,11 @@
                         <li><a class="link-disabled" href="">לתה מנצח</a></li>
                     </ul>
                 </li>
-                <li><a href="about/about.html">אודות</a></li>
-                <li><a href="contact-us/contactus.html">צור קשר</a></li>
+                <li><a href="about-accessibility.html">אודות</a></li>
+                <li><a href="contactus-accessibility.html">צור קשר</a></li>
                 <li>
-                    <a href="accessibility/index-accessibility.html">
-                        <img class="wheelchair" src="images/whitewheelchair.png" alt="מעבר לאתר נגיש"/>
+                    <a href="../index.html">
+                        <img class="wheelchair" src="../images/whitewheelchair.png" alt="מעבר לאתר נגיש"/>
                     </a>
                 </li>
             </ul>
@@ -78,7 +79,7 @@
             <p class="vidtext">לא צריך ניסיון ואפילו לא מרפסת, מהשלב הראשון עד לשלב האחרון</p>
             <div class="homepage-video">
                 <video width="1280" height="800" autoplay muted loop>
-                    <source src="video/homepage-video.mp4" type="video/mp4">
+                    <source src="../video/homepage-video.mp4" type="video/mp4">
                 </video>
             </div>
             <p class="vidtext2">איזה תבלין תרצו לגדל?</p>
@@ -90,7 +91,7 @@
             <span class="all-herb-anchor" id="chooseherb"></span>
             <div class="herbimages">
                 <a href="" class="herb-text link-disabled">
-                    <img class="imagesize" src="images/rosemary.jpg" alt=""/>
+                    <img class="imagesize" src="../images/rosemary.jpg" alt=""/>
                     <div class="text">רוזמרין
                         <div class="under-line"></div>
                     </div>
@@ -99,9 +100,9 @@
                         <p>
                         <div class="icon-rosemary">
                             <div class="ideal">תנאי גידול:</div>
-                            <img class="water-can-rosemary" src="images/white-water-can.png"/>
+                            <img class="water-can-rosemary" src="../images/white-water-can.png"/>
                             <div class="rosemary-waterinfo">השקייה: מועטה</div>
-                            <img class="sun-rosemary" src="images/white-sun.png"/>
+                            <img class="sun-rosemary" src="../images/white-sun.png"/>
                             <div class="rosemary-suninfo">תאורה: שמש מלאה</div>
 
                         </div>
@@ -109,7 +110,7 @@
                 </a>
 
                 <a href="" class="herb-text link-disabled">
-                    <img class="imagesize" src="images/mint.jpg" alt=""/>
+                    <img class="imagesize" src="../images/mint.jpg" alt=""/>
                     <div class="text">נענע
                         <div class="under-line"></div>
                     </div>
@@ -117,17 +118,17 @@
                         <p id="mint-text">לתחושת רעננות בפה</p>
                         <div class="icon-mint">
                             <div class="ideal">תנאי גידול:</div>
-                            <img class="water-can-mint" src="images/white-water-can.png"/>
+                            <img class="water-can-mint" src="../images/white-water-can.png"/>
                             <div class="mint-waterinfo"> השקייה:מרובה</div>
-                            <img class="sun-mint" src="images/white-sun.png"/>
+                            <img class="sun-mint" src="../images/white-sun.png"/>
                             <div class="mint-suninfo">תאורה: שמש מלאה</div>
 
                         </div>
                     </div>
                 </a>
 
-                <a href="sage/sage.html" class="herb-text">
-                    <img class="imagesize" src="images/sage.jpg" alt=""/>
+                <a href="sage-accessibility.html" class="herb-text">
+                    <img class="imagesize" src="../images/sage.jpg" alt=""/>
                     <div class="text">מרווה
                         <div class="under-line"></div>
                     </div>
@@ -135,9 +136,9 @@
                         <p id="sage-text">אחד מצמחי התבלין העתיקים והנפוצים ביותר בארץ</p>
                         <div class="icon-sage">
                             <div class="ideal">תנאי גידול:</div>
-                            <img class="water-can-sage" src="images/white-water-can.png"/>
+                            <img class="water-can-sage" src="../images/white-water-can.png"/>
                             <div class="sage-waterinfo">השקייה: בינונית</div>
-                            <img class="sun-sage" src="images/white-sun.png"/>
+                            <img class="sun-sage" src="../images/white-sun.png"/>
                             <div class="sage-suninfo">תאורה: חצי צל</div>
 
                         </div>
@@ -145,7 +146,7 @@
                 </a>
 
                 <a href="" class="herb-text link-disabled">
-                    <img class="imagesize" src="images/basil.jpg" alt=""/>
+                    <img class="imagesize" src="../images/basil.jpg" alt=""/>
                     <div class="text">בזיליקום
                         <div class="under-line"></div>
                     </div>
@@ -153,9 +154,9 @@
                         <p id="basil-text">באיטליה נחשב לסמל האהבה</p>
                         <div class="icon-basil">
                             <div class="ideal">תנאי גידול:</div>
-                            <img class="water-can-basil" src="images/white-water-can.png"/>
+                            <img class="water-can-basil" src="../images/white-water-can.png"/>
                             <div class="basil-waterinfo"> השקייה: מרובה</div>
-                            <img class="sun-basil" src="images/white-sun.png"/>
+                            <img class="sun-basil" src="../images/white-sun.png"/>
                             <div class="basil-suninfo">תאורה: שמש מלאה</div>
                         </div>
                     </div>
@@ -163,7 +164,7 @@
             </div>
 
             <div class="all-herbs-btn">
-                <a href="tavlinimpage/tavlinimpage.html" class="herb-button">לכל התבלינים </a>
+                <a href="../tavlinimpage/tavlinimpage.html" class="herb-button">לכל התבלינים </a>
             </div>
         </section>
 
@@ -226,22 +227,22 @@
         <div>
             <nav class="navtwo">
                 <ul class="footer-nav1">
-                    <li><a href="index.html">דף הבית</a></li>
+                    <li><a href="index-accessibility.html">דף הבית</a></li>
                     <li><a class="link-disabled" href="">איך מתחילים? </a></li>
-                    <li><a href="tavlinimpage/tavlinimpage.html">התבלינים</a></li>
+                    <li><a href="tavlinimpage-accessibility.html">התבלינים</a></li>
                 </ul>
 
                 <ul class="footer-nav2">
                     <li><a class="link-disabled" href=""> הקטגוריות</a></li>
-                    <li><a href="about/about.html">אודות</a></li>
-                    <li><a href="contact-us/contactus.html">צור קשר</a></li>
+                    <li><a href="about-accessibility.html">אודות</a></li>
+                    <li><a href="contactus-accessibility.html">צור קשר</a></li>
                 </ul>
             </nav>
 
             <div class="footer-around">
 
                 <ul class="herbs-footer">
-                    <li><a href="sage/sage.html">מרווה</a></li>
+                    <li><a href="sage-accessibility.html">מרווה</a></li>
                     <li><a class="link-disabled" href="">בזיליקום</a></li>
                     <li><a class="link-disabled" href="">תימין</a></li>
                     <li><a class="link-disabled" href="">נענע</a></li>
