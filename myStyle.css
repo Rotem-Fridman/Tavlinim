@@ -7,15 +7,13 @@
 #container {
     width: 1280px;
     margin: 0 auto;
-
-
 }
 
 .wheelchair {
     width: 30px;
 }
 
-.disabled {
+.link-disabled {
     cursor: not-allowed;
     text-decoration: none;
 }
@@ -142,6 +140,7 @@
     background-color: #293d31;
 }
 
+
 #navone .tavlinim-menu-container:hover .tavlinim-menu {
     display: grid;
 }
@@ -149,6 +148,40 @@
 #navone ul li:hover .categories-menu {
     display: grid;
 }
+
+.bread-menu {
+    margin-top: 8px;
+}
+
+.bread-menu ol {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bread-menu ol li {
+    margin-left: 12px;
+    font-size: 16px;
+    position: relative;
+}
+
+.bread-menu ol li a {
+    color: #293d31;
+}
+
+.bread-menu ol li:nth-child(2) {
+    font-weight: bold;
+}
+
+ .bread-menu ol li:not(:last-child):after {
+     content: '>';
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     padding: 0 2px;
+ }
 
 .homepage {
     position: relative;

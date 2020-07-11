@@ -14,7 +14,7 @@
     width: 30px;
 }
 
-.disabled {
+.link-disabled {
     cursor: not-allowed;
 }
 
@@ -219,7 +219,7 @@
     background-repeat: no-repeat;
 }
 
-.Background-opacity {
+.background-opacity {
     width: 1280px;
     height: 520px;
     background-color: rgba(0, 0, 0, 0.60);
@@ -229,7 +229,7 @@
     flex-direction: column;
 }
 
-.Background-opacity h2 {
+.background-opacity h2 {
     font-weight: normal;
 }
 

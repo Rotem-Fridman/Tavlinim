@@ -15,7 +15,7 @@
     width: 30px;
 }
 
-.disabled {
+.link-disabled {
     cursor: not-allowed;
     text-decoration: none;
 }

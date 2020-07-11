@@ -206,7 +206,7 @@
     background-repeat: no-repeat;
 }
 
-.Background-opacity {
+.background-opacity {
     width: 1280px;
     height: 600px;
     background-color: rgba(0, 0, 0, 0.80);
@@ -390,7 +390,7 @@ nav ol li:last-child {
     width: 300px;
 }
 
-.disabled {
+.link-disabled {
     cursor: not-allowed;
 }
 
