@@ -90,8 +90,7 @@ h3 {
     width: 20px;
     height: 60px;
     padding-top: 5px;
-
-
+    transform: rotate(180deg);
 }
 
 .season-text {
