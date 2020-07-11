@@ -269,11 +269,7 @@ h3 {
     height: 70px;
     width:1280px;
     background-color:#000000;
-    position: absolute;
-    top: 520px;
     display: flex;
-   
-
 }
 
 .text-icon {

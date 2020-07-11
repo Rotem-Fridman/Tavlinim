@@ -16,13 +16,11 @@
     background-image: url('../images/contact-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1280px;
-    height: 520px;
 }
 
 .background-opacity {
     width: 1280px;
-    height: 520px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.60);
     display: flex;
 }

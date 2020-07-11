@@ -16,16 +16,13 @@
 .sage-bg-cover {
     background-size: cover;
     background-image: url('../images/sage-bg.jpg');
-    height: 510px;
     width: 1280px;
 }
 
 .background-opacity {
     width: 1280px;
-    height: 520px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.60);
-    position: absolute;
-    top: 0;
     display: flex;
     flex-direction: column;
 }
@@ -74,11 +71,7 @@ h3 {
     height: 70px;
     width: 1280px;
     background-color: #293d31;
-    position: absolute;
-    top: 520px;
     display: flex;
-
-
 }
 
 .text-icon {
